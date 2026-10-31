@@ -4,6 +4,7 @@
 #include "std_msgs/msg/string.hpp"
 // 使用std命名空间，后续string、bind、shared_ptr等就不用写std::了，简化代码
 using namespace std;
+using namespace std::chrono_literals; // 专门给 1s 500ms
 
 // 自定义发布节点类 Talker，继承 rclcpp::Node（ROS所有节点都必须继承这个基类）
 class Talker : public rclcpp::Node
